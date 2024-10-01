@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cyy3uru3e27pg"]
+
+[node name="CustomerCardPlaceholder" type="ColorRect"]
+offset_right = 150.0
+offset_bottom = 200.0
+color = Color(0.929412, 0.768627, 0.847059, 0.745098)
