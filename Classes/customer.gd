@@ -12,9 +12,3 @@ func _init(name: String, special: bool = false, order: Order = null, tip: int = 
 	self.special = special
 	self.order = order
 	self.tip = tip
-
-func get_order() -> Order:
-	return order
-
-func is_special() -> bool:
-	return special

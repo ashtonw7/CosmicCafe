@@ -2,7 +2,7 @@ extends Resource
 
 class_name Order
 
-var items: Array = []
+var items: Array[String] = []
 
-func _init(items: Array = []):
+func _init(items: Array[String] = []):
 	self.items = items

@@ -1,16 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3knll0f6xus5"]
+[gd_scene load_steps=3 format=3 uid="uid://d3knll0f6xus5"]
 
+[ext_resource type="Script" path="res://Scenes/Cards/GadgetCard.gd" id="1_6lgj0"]
 [ext_resource type="FontFile" uid="uid://0weclw5u8rdi" path="res://Assets/Fonts/Roboto-Bold.ttf" id="1_ttips"]
 
-[node name="GadgetCard" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[node name="GadgetCard" type="Node2D"]
+script = ExtResource("1_6lgj0")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 150.0
 offset_bottom = 200.0
+color = Color(0.709804, 1, 1, 1)
 
-[node name="Name" type="Label" parent="."]
+[node name="GadgetName" type="Label" parent="."]
 offset_right = 150.0
 offset_bottom = 25.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -20,11 +21,21 @@ text = "Gadget Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="."]
+[node name="Price" type="Label" parent="."]
 offset_left = 8.0
 offset_top = 148.0
 offset_right = 150.0
 offset_bottom = 200.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
+text = "1x Moon Juice"
+
+[node name="Description" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 30.0
+offset_right = 152.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
 text = "Description"
+autowrap_mode = 3

@@ -1,31 +1,46 @@
-[gd_scene load_steps=2 format=3 uid="uid://ba15rkb1s007s"]
+[gd_scene load_steps=3 format=3 uid="uid://ba15rkb1s007s"]
 
 [ext_resource type="FontFile" uid="uid://0weclw5u8rdi" path="res://Assets/Fonts/Roboto-Bold.ttf" id="1_0e002"]
+[ext_resource type="Script" path="res://Scenes/Cards/CustomerCard.gd" id="1_kyiw5"]
 
-[node name="Card" type="Control"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 150.0
-offset_bottom = 200.0
+[node name="Card" type="Node2D"]
+script = ExtResource("1_kyiw5")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 2
 offset_right = 150.0
 offset_bottom = 200.0
+color = Color(1, 0.890196, 1, 1)
 
-[node name="Name" type="Label" parent="."]
-layout_mode = 2
+[node name="CustomerName" type="Label" parent="."]
+offset_top = 10.0
 offset_right = 150.0
-offset_bottom = 25.0
+offset_bottom = 50.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_0e002")
 theme_override_font_sizes/font_size = 16
 text = "Customer Name"
 horizontal_alignment = 1
-vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Points" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 152.0
+offset_bottom = 102.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "0 Points"
+
+[node name="Tip" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 30.0
+offset_right = 152.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "1 Coin"
 
 [node name="Order" type="Label" parent="."]
-layout_mode = 2
 offset_left = 8.0
 offset_top = 148.0
 offset_right = 150.0
